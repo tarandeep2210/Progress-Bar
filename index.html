@@ -28,7 +28,13 @@
             function fillBar(seconds){
                 console.log("clicked");
                 const bar = document.querySelector('.bar');
-                // let percent = 0;
+               
+                bar.style.transition = `${seconds}s linear width`;
+                bar.style.width ='100%';
+
+                //added comment
+
+                 // let percent = 0;
                 // const interval = setInterval(() => {
                 //     bar.style.width = percent +'%';
                 //     percent++;
@@ -39,8 +45,6 @@
 
                 // },(seconds *1000) / 100);
                 //             }
-                bar.style.transition = `${seconds}s linear width`;
-                bar.style.width ='100%';
             }
         </script>
         
